@@ -4,6 +4,7 @@ from main.models import Artist, Album, Song
 
 
 class ArtistSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Artist
         fields = ["name", "dob", "country"]
